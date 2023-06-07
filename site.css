@@ -1,0 +1,33 @@
+#container {margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+            }
+body {
+  background-color: #18161a;
+}
+h1{ font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: #ca9ee6;
+      }
+
+h2{ font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: #ca9ee6;
+      }
+
+h3{ font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: #ca9ee6;
+      }
+h4{ font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: #ca9ee6;
+      }
+body{  font-family: Arial, sans-serif;
+      color: #e3d1df;
+
+}
+a:link {
+	text-decoration: underline; color: #7c00f7;}
+a:visited {color: #f700c1;}
+a:hover {color: #7c00f7;}
