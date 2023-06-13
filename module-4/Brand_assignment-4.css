@@ -1,0 +1,42 @@
+#container {margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+            }
+h1{
+    text-align: center;
+}
+body {
+  background-color: #18161a;
+  font-family: Arial, sans-serif;
+  color: #e3d1df;
+}
+
+#image-gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  margin-top: 10px;
+}
+.image-item {
+    border: 2px solid;
+}
+h3 {
+    text-align: center;
+    color: #e3d1df;
+}
+figure {
+    text-align: center;
+}
+figcaption {
+  font-style: italic;
+  font-size: .75em;
+  color: #e3d1df;
+}
+
+
+
+
+.back-link {
+			float: right;
+			margin-bottom: 20px;
+	}
