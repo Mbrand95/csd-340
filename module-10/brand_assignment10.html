@@ -1,0 +1,50 @@
+<!--Michele B    Assignment 10-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="Brand_assignment-4.css" >
+  <title> CSD 340 Web Development with HTML and CSS </title>
+ <script>
+     function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+        
+      }
+ 
+    </script>
+ <link rel='stylesheet' type='text/css' href='brand_assignment10css.css' />
+</head>
+<body>
+	<div id="container">
+ 
+  <h1> Assignment 10.3: JavaScript - Part 2</h1>
+
+<p>Hover to change</p>
+<br />
+<a href=#
+         onmouseover="moon.src='moon.jpg';"
+         onmouseout= "moon.src='moon-2.jpg';"
+      >
+        <img border = 0 name = "moon" src = "moon.jpg" width = 300>
+      </a>
+<br />
+<br />
+<p>Click to change</p>
+<a href=#
+		 onclick="cat.src='cat-1.jpg';"
+       		  onmouseout= "cat.src='cat.jpg';"
+      >
+        <img border = 0 name = "cat" src = "cat.jpg" width = 300>
+      </a>
+
+</body>
+</html>
+
