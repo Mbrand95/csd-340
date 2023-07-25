@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <link rel="stylesheet" href="brand-assignment12css.css" />
+</head>
+<body>
+  <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+  <div id="container">
+
+    <div class="left-div" style="width: 45%; float: left">
+      <h3>Top 10 Favorite Books</h3>
+      <ol id="bookList">
+        <li>East</li>
+        <li>Holes</li>
+        <li>Twilight</li>
+        <li>Harry Potter</li>
+        <li>Sherlock Holmes</li>
+        <li>We Were Liars</li>
+        <li>The Scarlet Letter</li>
+        <li>Great Gatsby</li>
+        <li>Much Ado About Nothing</li>
+        <li>Astrophysics for People in a Hurry</li>
+      </ol>
+    </div>
+
+    <button id="topToBottomBtn">Top to Bottom</button>
+    <button id="bottomToTopBtn">Bottom to Top</button>
+
+<script>
+
+    const bookList = Array.from(document.querySelectorAll("#bookList li")).map(li => li.textContent);
+
+
+    function displayTopToBottom() {
+      const sortedBooks = bookList.slice().sort();
+      displayBooks(sortedBooks);
+    }
+
+    function displayBottomToTop() {
+      const sortedBooks = bookList.slice().sort().reverse();
+      displayBooks(sortedBooks);
+    }
+
+    function displayBooks(books) {
+      const bookListElement = document.getElementById("bookList");
+      bookListElement.innerHTML = ""; 
+
+      books.forEach(book => {
+        const li = document.createElement("li");
+        li.textContent = book;
+        bookListElement.appendChild(li);
+      });
+    }
+
+    document.getElementById("topToBottomBtn").addEventListener("click", displayTopToBottom);
+    document.getElementById("bottomToTopBtn").addEventListener("click", displayBottomToTop);
+  </script>
+
+
+
+    <div class="right-div" style="width: 45%; float: right">
+      <h3>5 Things I’ve Learned Since the Course Started</h3>
+      <ul>
+        <li>How to make a webpage</li>
+        <li>Basics of css</li>
+        <li>Basics of html</li>
+        <li>Design choices</li>
+        <li>Github Pages</li>
+      </ul>
+    </div>
+
+    <a href="../index.html" class="back-link">Back to Landing Page</a>
+
+  </div>
+
+</body>
+</html>
